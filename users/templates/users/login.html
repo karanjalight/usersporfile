@@ -1,0 +1,22 @@
+
+  <div class="content-section">
+    <form method="POST">
+      {% csrf_token %}
+
+        {{  form.as_p }}
+
+        <br>
+
+        <button type="submit"> Sign In</button>
+
+    </form>
+
+    <div>
+
+      <p>Need An Account? 
+        <a href="{% url 'register'  %}"> Register</a>
+      </p>
+    </div>
+
+
+  </div>
