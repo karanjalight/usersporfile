@@ -3,8 +3,11 @@
     <form method="POST">
       {% csrf_token %}
 
-        {{  form.as_p }}
-
+        <p> Username :   <br>  {{  form.username }} </p>
+        <p> Email :  <br> {{  form.email }} </p>
+        <p> Password : <br>  {{  form.password1 }} </p>
+        <p> Confirm Password :  <br> {{  form.password2 }} </p>
+        {{  image }} 
         <br>
 
         <button type="submit"> Sign Up</button>
